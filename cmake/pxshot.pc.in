@@ -1,0 +1,11 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}
+libdir=${prefix}/@CMAKE_INSTALL_LIBDIR@
+includedir=${prefix}/@CMAKE_INSTALL_INCLUDEDIR@
+
+Name: pxshot
+Description: Pxshot Screenshot API - Official C SDK
+Version: @PROJECT_VERSION@
+Requires: libcurl
+Libs: -L${libdir} -lpxshot
+Cflags: -I${includedir}
